@@ -1,3 +1,5 @@
 1. Tidak boleh mengupload file aneh-aneh
 2. Tidak ada batasan umur untuk mengupload
 3. Jangan ada yang Gay
+4. Gunakan Packet Tracer versi 7 keatas
+5. Berikan keterangan yang jelas pada topologinya
