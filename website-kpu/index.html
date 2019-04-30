@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content=" Website KPU Republik Indonesia">
+  <meta name="author" content="Harry Ridwan Ramadan">
+  <meta name="UI/UX" content="mahmudinashar@yahoo.co.id">
+  <meta name="redesign" content="v2">
+  <link rel="shortcut icon" href="logo.png">
+
+  <title>KPU
+
+</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="site.min.css">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <!-- CSS Wahid -->
+  <link href="custom.css" rel="stylesheet">
+    
+  <!-- CSS Wahid -->
+  <link href="demo.css" rel="stylesheet">
+ 
+
+  <!-- Custom styles for this template -->
+  <link href="sticky-footer-navbar.css" rel="stylesheet">
+  <link href="homepage.css" rel="stylesheet">
+
+ 
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="jquery.countdown.css">
+ 
+	<!-- Custom scrollbars CSS -->
+	<link href="jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <script src="jquery.min.js"></script>
+
+  <!-- modify here!  -->
+  <link href="plktn.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="font-awesome.min.css" rel="stylesheet">
+  <script src="plktn.js"></script>
+  <script src="jquery.ticker.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+
+
+ </head>
+
+
+  <body>
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse">
+
+    <nav role="navigation" style="margin-bottom:0px;z-index: 100000;margin-left: -20px;padding-top: 0px;opacity: 1;padding-top: 8px;">
+      <nav id='primary_nav_wrap'>   
+          <ul></ul>                     
+      </nav>
+    </nav>                
+
+      <div id="modal_cover"></div>
+      <ul class="hidden-xs hidden-md nav navbar-nav navbar-right searchbar_toggle" onclick="openSearch()">
+        <li><i class="fa fa-search" aria-hidden="true"></i></li>
+      </ul>
+      <ul class="hidden-xs hidden-md nav navbar-nav navbar-right langbar">
+       <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <img src="id.png" style="width:16px;height:16px;margin-right:5px" class="pull-left" alt=""/>        Bahasa        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="https://www.kpu.go.id/index.php/home/change_language/indonesia?page=">
+             <img src="https://www.kpu.go.id/themes/kpupusatflat/images/id.png" style="width:16px;height:16px;margin-right:5px" class="pull-left" alt=""/>
+             Indonesia</a></li>
+             <li><a href="https://www.kpu.go.id/index.php/home/change_language/english?page=">
+               <img src="https://www.kpu.go.id/themes/kpupusatflat/images/en.png" style="width:16px;height:16px;margin-right:5px" class="pull-left" alt=""/>               Inggris</a></li>
+             </ul>
+           </li>
+         </ul>
+
+       </div><!--/.nav-collapse -->
+     </div>
+</div>
+
+<!-- 
+-------------- 
+  SEARCHING
+-------------- 
+-->
+<div class="col-md-4 searchbar">
+<form method="get" id="cse-search-box" action="https://www.kpu.go.id/index.php/searching">  
+ <div class="input-group searchform" >
+  <input type="hidden" name="cx" value="008990468370182569680:mz1ac1l55hq">
+  <input type="hidden" name="cof" value="FORID:11">
+  <input class="form-control" name="q" type="text" id="query_string3" placeholder="Cari Sesuatu">
+  <span class="input-group-btn">
+    <button name="sa" class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+  </span>
+</div>
+</form>
+</div>
+
+ 
+    
+
+<div class="container" style="background: #FFF;padding-left: 0px !important;padding-right: 0px !important;" >
+<!-- 
+-------------- 
+  BANNER KANAN ATAS
+-------------- 
+-->
+<div class="row-fluid" style="background:#f39a45;">
+  
+        <!-- scrolling -->
+      <div class="col-md-12 nopadding">
+      
+      <img src="https://www.kpu.go.id/themes/kpupusatflat/kpu/img/banner.jpg" class="img-responsive"  id="header">
+      <div id="headerphone"></div>
+      <div id="headertablet"></div>
+      </div>
+      
+    
+<!--     <div class="col-md-6 nopadding" style="height:125px;">
+     
+ 	<img src="https://www.kpu.go.id/application/modules/bannerdepan/files/24e5048fd8e222c5e66e55a4c5bc75f3.jpg" style="width:100%;height:133px">
+              </div>-->
+    
+      <!--<div class="col-md-6">&nbsp;</div>-->
+      <!-- <div class="col-md-6"><SPAN style="color:#FFFFFF">PARTAI PESERTA PEMILU 2019 : </SPAN></div>-->
+     
+
+<!--       <div class="col-md-6" style="background-color:#dc6400; padding:5px; border-top:#FFFFFF SOLID 1px;">
+     	 <marquee  onmouseover="this.setAttribute('scrollamount', 0, 0);" onmouseout="this.setAttribute('scrollamount', 6, 0);"  style="cursor:pointer;">
+	 	 	 	<img src="https://www.kpu.go.id/application/modules/bannerdepan/files/bba8dbb3555470504bc7a78ded40199f.jpg" style="height:50px">
+	       	       		  </marquee>
+		      </div>-->
+    
+      
+      
+        
+      
+      <div style="clear:both;"></div>
+      
+   
+</div>
+
+<!-- 
+-------------- 
+  NEWSTICKER {BERITA MLAKU}
+-------------- 
+-->
+<div class="row-fluid" >
+
+<div class="row">
+  <div class="col-md-12">
+    <nav class="navbar navbar-default navbar-inverse" role="navigation" style="margin-bottom:0px;z-index: 100000;margin-top: 0px;min-height: 40px !important;padding-top: 0px;opacity: 1;padding-top: 8px;">
+      <nav id='primary_nav_wrap'>   
+          <ul><li><a href='https://www.kpu.go.id/index.php/home'>BERANDA</a><ul></ul></li><li><a href='https://lindungihakpilihmu.kpu.go.id'>DATA PEMILIH</a><ul></ul></li><li><a href='https://infopemilu.kpu.go.id/'>INFO PEMILU</a><ul></ul></li><li><a href='https://www.kpu.go.id/index.php/pages/detail/N2XTwbi2J-IpQEBYAlae6KML8OUfr13wUzTLU42qxqtfjHRDB2HND_PSRIbRdwOWzfkSZmbuD-JLUYrKiIkqhA~~/DIUp2cRKBQFLdupS6vQh-VKhjJJnhY5d3iHIdfmkumlxiBbABjPlKlzyVq-G9tomQvbcv0JN9PQTbut9IhNBwg~~'>PESERTA PEMILU</a><ul></ul></li><li><a href='https://pemilu2019.kpu.go.id'>HASIL PEMILU 2019</a><ul></ul></li><li><a href='https://jdih.kpu.go.id/'>REGULASI (JDIH)</a><ul></ul></li><li><a href='https://www.kpu.go.id/index.php/pages/detail/j9pnu7bWBpRu_VHbf-23j7Hfhs7L7wmjkXHWRM-3ODfckLXji4fDP27XGEBmcK2SOwkqK73lFA258gjE5NwRhw~~/UT5QHNSG62IoOHJUFfRT9GPz3l_ZTl2gPFtn7FVuRc1Qy_1-4A9oNhN4QT6RV569h-PJ0mSaCFor0s6aMilKgQ~~'>KAMPANYE</a><ul></ul></li><li><a href='https://www.kpu.go.id/index.php/pages/detail/U41-v5rPY3V-LdbPYHv9zYFoHbQ9NFO9CjS2BgQq3snYlo80xws7Q8xRT4N7yoigKQBgSTNODdeo1NPY82xJOQ~~/UxbtKYmZAN_b6QHJMPfaB5JKZeIze3BiaI1jzTMpFF9Uc53Suj4PS1Ka0dPcm6bNir8db3n287XzvUIiF1jH6w~~'>LOGISTIK</a><ul></ul></li><li><a href='https://www.kpu.go.id/index.php/pages/detail/IUZkxjfzeiiZhGEn2OKY-6FnB22wyf7HYST1I97WPpHhbIWVwf0mq5NDyLhXQ9c_Um-3onIpDC8sncLV4FP8ag~~/cNjcEpJZKqG4C78Td5Iebx6ecktyNTubfiAg4MLH7ZLg1i_ezpf9QXjWzM4K1L2429TAUfVykLQpSvjGpl2xWw~~'>HOAX PEMILU</a><ul></ul></li><li><a href='https://www.kpu.go.id/index.php/question_answer'>QnA</a><ul></ul></li></ul>                     
+      </nav>
+    </nav>
+  </div>
+</div>
+            
+ <div class="col-md-12 scrollbar">
+ <ul id="js-news" class="js-hidden">
+ <li class="news-item"><b "><font size="2">Lomba Jurnalistik Pemilu 2019 <a href="http://cdn3.tstatic.net/ads/kpu/01042019/landingpage2/landingpage.html" ">KLIK DI SINI</a></font></b></li></ul>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <h4 style="color:#FF3300"><strong>TAG POPULER :  </strong>
+	
+		
+	</h4>
+  </div>
+</div>
+
+
+<!-- 
+-------------- 
+  SLIDESHOW - HEADLINE
+-------------- 
+-->
+<div class="col-md-8 nopadding">
+   <div id="carousel-example-captions" class="carousel slide " data-ride="carousel"  >
+   <div class="innershadow">
+    <h3 class="headline_title"></span>Headline</h3>
+  </div>
+
+  <ol class="carousel-indicators">
+          <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-captions" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-example-captions" data-slide-to="2" class=""></li>
+          <li data-target="#carousel-example-captions" data-slide-to="3" class=""></li>
+          <li data-target="#carousel-example-captions" data-slide-to="4" class=""></li>
+      </ol>
+
+  <div class="carousel-inner">
+    
+      <div class="item  active">
+        <img src="https://www.kpu.go.id/./application/modules/post/images/90f1ef8fafd8c220d869b5236fc2d2e1.jpg" style="width:900px;height:485px" alt=""/>        <div class="carousel-caption">
+          <h5 class="title_slideshow">
+            <a href="https://www.kpu.go.id/index.php/post/read/hakFZa_0jorlBRwvn0jMZGOWN4Hc3X0XkGqB3EeRAlWoOyuTLbSd5gHaVvRb-qKUjIytznfHi7LSXR_Ws3L0yw~~/WnhoKUbrz-V0YpRzG5hXHCC5BydYcP8QW_EVg5HtJ2ZhEhQ4Hr_UrGLS7GwA_P0NfvzXLZbD-xmbu9lkv81Odg~~">FKUI Kaji Sebab Penyelenggara Sakit Hingga Meninggal di Pemilu 2019</a>
+          </h5>
+          <p>
+           <a href=""><b>29 Apr 2019</b></a><br />
+           <a class="content_slideshow" href="https://www.kpu.go.id/index.php/post/read/hakFZa_0jorlBRwvn0jMZGOWN4Hc3X0XkGqB3EeRAlWoOyuTLbSd5gHaVvRb-qKUjIytznfHi7LSXR_Ws3L0yw~~/WnhoKUbrz-V0YpRzG5hXHCC5BydYcP8QW_EVg5HtJ2ZhEhQ4Hr_UrGLS7GwA_P0NfvzXLZbD-xmbu9lkv81Odg~~">
+          Senin (29/4/2019) pagi, rombongan dari Fakultas Kedokteran Universitas Indonesia (FKUI) menyambangi Kantor Komisi Pemilihan Umum (KPU) RI untuk beraudiensi, membahas&#8230;</a>
+           </p>
+        </div>
+       </div>
+            
+      <div class="item  ">
+        <img src="https://www.kpu.go.id/./application/modules/post/images/874fec47de97d42c0f5f9ed4ef300655.jpg" style="width:900px;height:485px" alt=""/>        <div class="carousel-caption">
+          <h5 class="title_slideshow">
+            <a href="https://www.kpu.go.id/index.php/post/read/V5jE_wdLoLLJVjCgLmyiiihNxeJnHQWlG7gcjBiu7Y49AIBCxplg0iZntJZTUTir_8jyN1Fj1TcnRWEFXdmEHg~~/8d_vWbqt5Fo0Ui7berbugUwH3yQMqvHt13DZHRdx184MW-spFtPwqlq10RzYNf4WAnnUVLNbyOmZkL5WUw0eyg~~">Pelatihan dan Ujian Sertifikasi PBJ Tingkat Dasar di lingkungan KPU Tahun 2019</a>
+          </h5>
+          <p>
+           <a href=""><b>27 Apr 2019</b></a><br />
+           <a class="content_slideshow" href="https://www.kpu.go.id/index.php/post/read/V5jE_wdLoLLJVjCgLmyiiihNxeJnHQWlG7gcjBiu7Y49AIBCxplg0iZntJZTUTir_8jyN1Fj1TcnRWEFXdmEHg~~/8d_vWbqt5Fo0Ui7berbugUwH3yQMqvHt13DZHRdx184MW-spFtPwqlq10RzYNf4WAnnUVLNbyOmZkL5WUw0eyg~~">
+          Biro Sumber Daya Manusia (SDM) KPU RI menyelenggarakan Pelatihan dan Ujian Sertifikasi Pengadaan Barang/Jasa Pemerintah Tingkat Dasar di lingkungan Sekretariat&#8230;</a>
+           </p>
+        </div>
+       </div>
+            
+      <div class="item  ">
+        <img src="https://www.kpu.go.id/./application/modules/post/images/a7ae55e08f793a7e0a16f48b40b40bd3.jpg" style="width:900px;height:485px" alt=""/>        <div class="carousel-caption">
+          <h5 class="title_slideshow">
+            <a href="https://www.kpu.go.id/index.php/post/read/wMK0Es__a8MTxkobnONhHeGilE3gSvlqbOu8XxZpz-MvsFgQ6HUagVjNoqtNZklvg7LyTF5BhZ1-Ps8osz16Hw~~/Uhs4DyMH3Cg38-q1OCC0zyipV9noaxZpDVXMxnEV5HgzTVAwfQPn3fNwUdjETwboyFOzOyKIW_GyKhvlPBhS8A~~">Transparan, KPU Silakan Sekretaris Parpol BPN 02 Pantau Server Pemilu</a>
+          </h5>
+          <p>
+           <a href=""><b>25 Apr 2019</b></a><br />
+           <a class="content_slideshow" href="https://www.kpu.go.id/index.php/post/read/wMK0Es__a8MTxkobnONhHeGilE3gSvlqbOu8XxZpz-MvsFgQ6HUagVjNoqtNZklvg7LyTF5BhZ1-Ps8osz16Hw~~/Uhs4DyMH3Cg38-q1OCC0zyipV9noaxZpDVXMxnEV5HgzTVAwfQPn3fNwUdjETwboyFOzOyKIW_GyKhvlPBhS8A~~">
+          Bentuk transparansi atas kerja yang tengah dan telah dilakukan, Komisi Pemilihan Umum (KPU) RI Kamis (25/4/2019) mengajak lima sekretaris partai&#8230;</a>
+           </p>
+        </div>
+       </div>
+            
+      <div class="item  ">
+        <img src="https://www.kpu.go.id/./application/modules/post/images/d0143c0a26778c7a6add91bd0c0fccf0.jpg" style="width:900px;height:485px" alt=""/>        <div class="carousel-caption">
+          <h5 class="title_slideshow">
+            <a href="https://www.kpu.go.id/index.php/post/read/7fJWFfD8J6XSaNyv6dqUKYjkdR2febI4oOJoBsQe2w3XlSuSQiXprKl5qP72-e59EPMXjgdhKx7Fc9OClRL5JQ~~/Y8F-T2EjK1OLj0v3iRHepaxdbsniLDn3VktnSRZ8yEmEOWN9tsPIAUzqIg_COhJJM87qPGpzAdrBfKoXqyjbVQ~~">KPU Tetap Profesional dan Berintegritas</a>
+          </h5>
+          <p>
+           <a href=""><b>24 Apr 2019</b></a><br />
+           <a class="content_slideshow" href="https://www.kpu.go.id/index.php/post/read/7fJWFfD8J6XSaNyv6dqUKYjkdR2febI4oOJoBsQe2w3XlSuSQiXprKl5qP72-e59EPMXjgdhKx7Fc9OClRL5JQ~~/Y8F-T2EjK1OLj0v3iRHepaxdbsniLDn3VktnSRZ8yEmEOWN9tsPIAUzqIg_COhJJM87qPGpzAdrBfKoXqyjbVQ~~">
+          Usai penyelenggaraan pemungutan suara 17 April 2019, gelombang ketidakpercayaan terhadap kinerja Komisi Pemilihan Umum (KPU) ternyata terus dibangun melalui pemberitaan&#8230;</a>
+           </p>
+        </div>
+       </div>
+            
+      <div class="item  ">
+        <img src="https://www.kpu.go.id/./application/modules/post/images/34fa708d7123bc586fb1396ec8ac698c.JPG" style="width:900px;height:485px" alt=""/>        <div class="carousel-caption">
+          <h5 class="title_slideshow">
+            <a href="https://www.kpu.go.id/index.php/post/read/2kkFXxIqtEKtZ5U7fayNMTDqhjIBimcCV3h7M_qoNrEHET1dWWFHrv_xe121Acb-wiRqaTARCz468v38e0e8yw~~/mEE71bWwDqP3dt2CsQPWOk9dz2E9SvCBttQ322xXr_gjxHZqdr7zfzv1dlRdykBAarhESVzDNBbuRT0RtxoWYA~~">Dilantik Pasca Pemungutan Suara, Arief: Langsung Kerja!</a>
+          </h5>
+          <p>
+           <a href=""><b>22 Apr 2019</b></a><br />
+           <a class="content_slideshow" href="https://www.kpu.go.id/index.php/post/read/2kkFXxIqtEKtZ5U7fayNMTDqhjIBimcCV3h7M_qoNrEHET1dWWFHrv_xe121Acb-wiRqaTARCz468v38e0e8yw~~/mEE71bWwDqP3dt2CsQPWOk9dz2E9SvCBttQ322xXr_gjxHZqdr7zfzv1dlRdykBAarhESVzDNBbuRT0RtxoWYA~~">
+          “Bahwa anda dilantik disaat tahapan krusial. Terutama KPU Kabupaten Dairi, anda harus mampu bekerja sama dan langsung bekerja, bukan hanya&#8230;</a>
+           </p>
+        </div>
+       </div>
+               </div>
+   <a class="right carousel-control" href="#carousel-example-captions" data-slide="next" style="z-index: 1000;">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+  <a class="left carousel-control" href="#carousel-example-captions" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+</div>
+</div>
+<!-- end slide show --> 
+
+<div class="col-md-4 nopadding">
+
+
+
+<!-- 
+-------------- 
+  COUNTDOWN
+-------------- 
+-->
+<div class="row-fluid">
+      <a href="http://ppid.kpu.go.id/" target="_blank">
+    <img src="https://www.kpu.go.id/reklame/ppid_banner_web2.jpg" style="width:100%;height:135px;">
+  </a>
+  </div>
+<!-- end down -->
+
+<!-- 
+-------------- 
+  AGENDA
+-------------- 
+-->
+<div class="row-fluid">
+  <div class="boxagenda">
+<!--    <h3><span class="glyphicon glyphicon-calendar"></span>  Kalender</h3> -->
+   <table class="date">
+
+&nbsp;
+<caption><a href="https://www.kpu.go.id/index.php/home/index/2019/03" class="calendar_left" title="Previous Month"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+<span class="calendar_title">April&nbsp;2019</span>
+<a href="https://www.kpu.go.id/index.php/home/index/2019/05" class="calendar_right"  title="Next Month"><i class="fa fa-angle-right" aria-hidden="true"></i></a></caption>
+<col class="weekday" span="5"><col class="weekend_sat"><col class="weekend_sun">
+
+<thead><tr>
+<th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th>
+</tr></thead><tbody>
+
+<tr>
+<td><div class="no_event detail" val="1"><span class="date">1</span><span class="event d1">&nbsp;</span></div></td><td><div class="no_event detail" val="2"><span class="date">2</span><span class="event d2">&nbsp;</span></div></td><td><div class="no_event detail" val="3"><span class="date">3</span><span class="event d3">&nbsp;</span></div></td><td><div class="no_event detail" val="4"><span class="date">4</span><span class="event d4">&nbsp;</span></div></td><td><div class="no_event detail" val="5"><span class="date">5</span><span class="event d5">&nbsp;</span></div></td><td><div class="no_event detail" val="6"><span class="date">6</span><span class="event d6">&nbsp;</span></div></td><td><div class="no_event detail" val="7"><span class="date">7</span><span class="event d7">&nbsp;</span></div></td>
+</tr>
+
+<tr>
+<td><div class="no_event detail" val="8"><span class="date">8</span><span class="event d8">&nbsp;</span></div></td><td><div class="no_event detail" val="9"><span class="date">9</span><span class="event d9">&nbsp;</span></div></td><td><div class="no_event detail" val="10"><span class="date">10</span><span class="event d10">&nbsp;</span></div></td><td><div class="no_event detail" val="11"><span class="date">11</span><span class="event d11">&nbsp;</span></div></td><td><div class="no_event detail" val="12"><span class="date">12</span><span class="event d12">&nbsp;</span></div></td><td><div class="no_event detail" val="13"><span class="date">13</span><span class="event d13">&nbsp;</span></div></td><td><div class="no_event detail" val="14"><span class="date">14</span><span class="event d14">&nbsp;</span></div></td>
+</tr>
+
+<tr>
+<td><div class="date_event detail"onClick=showAgenda(1) val="15"><span class="date">15</span></div></td><td><div class="date_event detail"onClick=showAgenda(1) val="16"><span class="date">16</span></div></td><td><div class="date_event detail"onClick=showAgenda(1) val="17"><span class="date">17</span></div></td><td><div class="date_event detail"onClick=showAgenda(1) val="18"><span class="date">18</span></div></td><td><div class="no_event detail" val="19"><span class="date">19</span><span class="event d19">&nbsp;</span></div></td><td><div class="date_event detail"onClick=showAgenda(1) val="20"><span class="date">20</span></div></td><td><div class="no_event detail" val="21"><span class="date">21</span><span class="event d21">&nbsp;</span></div></td>
+</tr>
+
+<tr>
+<td><div class="no_event detail" val="22"><span class="date">22</span><span class="event d22">&nbsp;</span></div></td><td><div class="no_event detail" val="23"><span class="date">23</span><span class="event d23">&nbsp;</span></div></td><td><div class="no_event detail" val="24"><span class="date">24</span><span class="event d24">&nbsp;</span></div></td><td><div class="no_event detail" val="25"><span class="date">25</span><span class="event d25">&nbsp;</span></div></td><td><div class="no_event detail" val="26"><span class="date">26</span><span class="event d26">&nbsp;</span></div></td><td><div class="no_event detail" val="27"><span class="date">27</span><span class="event d27">&nbsp;</span></div></td><td><div class="no_event detail" val="28"><span class="date">28</span><span class="event d28">&nbsp;</span></div></td>
+</tr>
+
+<tr>
+<td><div class="no_event detail" val="29"><span class="date">29</span><span class="event d29">&nbsp;</span></div></td><td><div class="active_no_event detail" val="30"><span class="date">30</span><span class="event d30">&nbsp;</span></div></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+
+</tbody></table>   <div class="event_detail">
+        <div class="modal_event">
+          <div class="event_detail_close" onclick="hideAgenda()"> <i class="fa fa-times-circle" aria-hidden="true"></i></div>
+            <!-- modal shown here -->
+        </div>
+    </div>  
+
+        <script>
+    $(".detail").on('click',function(){
+        var day = $(this).attr('val');
+        $.ajax({
+            type: 'post',
+            dataType: 'json',
+            url: "https://www.kpu.go.id/index.php/agenda/detail_event",
+            data:{year: 2019, mon: 04, day: day},
+            success: function( data ) {
+                var html = '';
+                if(data.status){
+                    var i = 1;
+                    $.each(data.data, function(index, value) {
+                        if(i % 2 == 0){
+                            html = html+'<div class="info1"><h4 class="content_modal_calendar">'+value.time+' - '+value.time_ends+' </h4><p>'+value.event+' <br /><a href="https://www.kpu.go.id/index.php/agenda/detail/'+value.id+'/'+parseDate(value.tgl_agenda)+'">Selengkapnya</a></p></div>';
+                        }else{
+                            html = html+'<div class="info2"><h4  class="content_modal_calendar">'+value.time+' - '+value.time_ends+' </h4><p>'+value.event+' <br /><a href="https://www.kpu.go.id/index.php/agenda/detail/'+value.id+'/'+parseDate(value.tgl_agenda)+'">Selengkapnya</a></p></div>';
+                        } 
+                        i++;
+                    });
+                }else{
+                    html = '<div class="message"><h4>'+data.title_msg+'</h4><p>'+data.msg+'</p></div>';
+                }
+
+                xhtml = '<div class="event_detail_close" onclick="hideAgenda()"> <i class="fa fa-times-circle" aria-hidden="true"></i></div>';
+                xhtml = xhtml+'<span class="modal_agenda_title">Detail Agenda</span>';
+                // xhtml = xhtml+'<div class="media-date-modal">';
+                // xhtml = xhtml+'<span style="font-size: 16px;font-weight: bold">'+day+'&middot;</span> ';
+                // xhtml = xhtml+'<span style="font-size: 16px;font-weight: bold">04</span><br />';
+                // xhtml = xhtml+'<span style="font-size: 16px;font-weight: bold">2019</span> ';
+                // xhtml = xhtml+'</div>';
+
+                html = xhtml+html; 
+                $( ".modal_event" ).html(html);
+                $(".s_date").html("Detail Agenda for "+$(this).attr('val')+" April 2019");
+            } 
+        });
+    });
+        
+    </script>
+
+</div>
+</div>
+<!-- end agenda -->
+
+</div>
+</div>
+
+<!-- 
+-------------- 
+  CONTENT
+-------------- 
+-->
+<div class="row-fluid">
+ <div class="col-md-2 hidden-xs hidden-md nopadding sidebarTopnews">
+   <div class="kotenTopnewsTitle">
+      #TRENDING
+   </div>
+
+   <div class="kotenTopnewsIsi">
+      <div class='xx' style='margin-bottom:10px;border-bottom:1px solid #FFF !important;padding-bottom: 10px;margin-top: 10px;'><div class='itemNomor'>1</div><li><div class='item'> <a href='https://www.kpu.go.id/index.php/post/read/KM5AASb5jfD7zY5SkR74kfiq6NqpwOaYC9YRe5lRxlsP_wNJt26Zbo1GGSuRVVGdx9EsLnbRjeL3JfVeXlZI6Q~~/B68FOjQjxdpJ_Yk4Xa_TWmmI9nO_be_udcLw0KR5kAMub0GdK7EkrqxVGRBYGBnLELJX8SFU8RThKqnDBn952w~~'>video challenge pemilu 2019, kerjasama kpu ri dan google indonesia</a></div></li></div><div class='xx' style='margin-bottom:10px;border-bottom:1px solid #FFF !important;padding-bottom: 10px;margin-top: 10px;'><div class='itemNomor'>2</div><li><div class='item'> <a href='https://www.kpu.go.id/index.php/post/read/7ymDrR01SU2AIIrBkYks7B4JmdNHOB7VEw5QuXjHuXc0DcNKj9cTlgXDb5yekLlACZisJjgslELprOo7gPD94Q~~/bbXz1eyNJO-dj8TcoIV-hinAt9Mvbe64zoo7k7ZnvM26F8_X7I5VHNwd-SUYSY5Ru-LKErRPEhwG1DaFvz_ICQ~~'>pengumuman penetapan calon anggota kpu kab/kota periode 2019-2024 di provinsi riau</a></div></li></div><div class='xx' style='margin-bottom:10px;border-bottom:1px solid #FFF !important;padding-bottom: 10px;margin-top: 10px;'><div class='itemNomor'>3</div><li><div class='item'> <a href='https://www.kpu.go.id/index.php/post/read/237DfUr00ImEuBe2MKTR70uv-4PvZYXbLoljvaVh35PxFkK5m9WstVyVV9m-K1wr8bB0z5nbXsxIN1Fyb1OgkA~~/kzU9xqd70_2VARV4joMeAyf3AXZAWODPGwQZpCgLjwLP_8PsEfQxL8RQl6_Fl3ZTpHIm_S9-x-jyp3vXSbqd7Q~~'>pengumuman beasiswa s-2 tata kelola pemilu di lingkungan kpu batch v tahun 2019</a></div></li></div><div class='xx' style='margin-bottom:10px;border-bottom:1px solid #FFF !important;padding-bottom: 10px;margin-top: 10px;'><div class='itemNomor'>4</div><li><div class='item'> <a href='https://www.kpu.go.id/index.php/post/read/FpgNjQusoleVoTLwXcu6nIPftb8FR2raaL2w_NIli78QsoM5qQNH49CoS8wdNlbTIqKS2-ZBIm7VNaoFFAmMxQ~~/7Mh7uU1khtVR9Wf4fjsQ_kHOWI3pCJTII4utpZQkfWlWL729m_tvLk4az2COaHdxxKXRcETbZXo2bjJiIz4rAw~~'>pengumuman pembentukan keanggotaan tim seleksi calon anggota kpu kabupaten periode 2019-2024</a></div></li></div><div class='xx' style='margin-bottom:10px;border-bottom:1px solid #FFF !important;padding-bottom: 10px;margin-top: 10px;'><div class='itemNomor'>5</div><li><div class='item'> <a href='https://www.kpu.go.id/index.php/post/read/7o04pWPw2gktE4nty33s1KIv0oWgccBr1NPv6Lz32n4MAmcnge8g4cjAAkxNOQVI2UQiZj8NVQ-CmU-M4FOpfw~~/ibBaX_kq4nFWmjAuER0rWPfCyJemSeRKT_lJ0cmNXF7A7MxfVrAOgZyMOMbFHKO4yKTG4VFzKLQIjxhpiTiBzA~~'>pengumuman penetapan calon anggota kpu kab/kota periode 2019-2024 di provinsi jatim dan maluku</a></div></li></div><div class='xx' style='margin-bottom:10px;border-bottom:1px solid #FFF !important;padding-bottom: 10px;margin-top: 10px;'><div class='itemNomor'>6</div><li><div class='item'> <a href='https://www.kpu.go.id/index.php/post/read/5OFSvIWt2HFm7GO41w2DxYEF_rEiimrU-U1c36GR-VyMLaEUNfBgjIOgNxRbuvew_FJ2qYqiyCXE1s9l57UGqg~~/vQx1GH9OcN0i42ZKwt_wC0nVSrGbeuF45Mwg1i9PIdkq4Hlnkx4q852o_0yPffUonqGpUDjxuH3VmBmXNQpInQ~~'>pengumuman penetapan calon anggota kpu kab/kota provinsi papua periode 2019-2024</a></div></li></div><div class='xx' style='margin-bottom:10px;border-bottom:1px solid #FFF !important;padding-bottom: 10px;margin-top: 10px;'><div class='itemNomor'>7</div><li><div class='item'> <a href='https://www.kpu.go.id/index.php/post/read/Pleq1jSIoZK6uBGexwX4Qfrj33Z2YBKNpa2ojD2IUZ2uwuooJfdL0idU7vleeYbb8Dr1XAPm5sP2PyNmJDDkyg~~/g4nGpgRL40z-mta-QXeLv9XfZ0rFwU93qSB2MWAqEBJOz9uBe5menXnSdkQHMJeSM2BilKgYjl-NrV6NsXhL5g~~'>surat 547 coffee morning serentak menjelang pelaksanaan hari pemungutan suara 17 april 2019</a></div></li></div><div class='xx' style='margin-bottom:10px;border-bottom:1px solid #FFF !important;padding-bottom: 10px;margin-top: 10px;'><div class='itemNomor'>8</div><li><div class='item'> <a href='https://www.kpu.go.id/index.php/post/read/QMbsQ3Gb5Ev3SJwfVD2H6zVKV5mjnJT9HWs7BokUdjKe1f882dG1z_Nz4Aiw-L5CmXXwPougSCFVyMKidO1tyw~~/trnvKdr_EAgC7MmgP56-1w0aCAiIhSt1GSfL6boffcGeYUfnUgD4BF3MM0fmiMkFYxvPe1n54ZDLTadz-fTpBQ~~'>kampanye di tempat terlarang: administrasi atau pidana ?</a></div></li></div><div class='xx' style='margin-bottom:10px;border-bottom:1px solid #FFF !important;padding-bottom: 10px;margin-top: 10px;'><div class='itemNomor'>9</div><li><div class='item'> <a href='https://www.kpu.go.id/index.php/post/read/VpRhSaCL1URjk6J0NmQFHLiEY_olu2JyjAsY5yqWS0Nt_fpMj6lrXZzNpJj27DAB73d9HNz7ZyVyG--hb28TWw~~/VD4DYF6lBB9rzJ5R4ePk-MYHnBY5s8ICGYPYeZ1veSnQ2y2_Ky-0QFmQDEYnqsYSOjU7LyCwdO7YtweokXAyOw~~'>623, ralat undangan 601 bimbingan teknis pemantapan situng</a></div></li></div><div class='xx' style='margin-bottom:10px;border-bottom:1px solid #FFF !important;padding-bottom: 10px;margin-top: 10px;'><div class='itemNomor'>10</div><li><div class='item'> <a href='https://www.kpu.go.id/index.php/post/read/9d1Ba545ykL4KBT0mzpjS14IYMWzrc879VYnKNMMMsDFIaY2q8lCojElIq6a4x52vzK--mr11FJKx07uCIMUAw~~/n28wYXkEjzObaMGHEbsV1bwS-dvC1XwpuhwwpsgmyHRk8Ke6zDMcSJ5rry5M4aQC4036Fj__30UKHG0NKJLfgA~~'>surat ketua kpu ri perihal persiapan uji coba nasional aplikasi situng pemilu tahun 2019</a></div></li></div>   </div>
+ </div>
+
+ <div class="col-md-6 nopadding">
+   <div class="koten">
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade in active" id="berita">
+       <div class="kontentab">
+                               <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Lomba Karya Jurnalistik Pemilu 2019" href="https://www.kpu.go.id/index.php/post/read/dU1aLJ8TjZswNaWu77GT5VBFs7FhjxOIDXYSQl6Fu33i9QP81SfwBgaZQAeN9opVhgNk0-yav0U_ZnRvmS7Pfg~~/Dq8vCBm6V7NTgkxCl7Bd2kqEoTuM-d8oUI7Dc9FuhzudOeptScyq6OzNnUO_dFqduCmM38XIGTe6oiAb0sUzjw~~">Lomba Karya Jurnalistik Pemilu 2019</a>
+            </h5>
+
+          <div class="content_meta"><b>artikel</b> &middot; posted by <b>admin</b> &middot; dibaca <b>21</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">01</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Jun</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/c6d590aa2fa37a36ead7f5aa62107677.jpg" title=""></div>
+                            <div class="content_thumb">
+                Lomba Karya Jurnalistik Pemilu 2019              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Warga Desa Jakatan Masaha Antusiasi Ikut PSL Pemilu 2019" href="https://www.kpu.go.id/index.php/post/read/S3Zx_gIfQtuzQNxnULhG9GH-AId2ktyTt3FnfjgFzYMTgdvTvXtZdwbPy6WOk7ixElhs9cstxjbN4Io4oG2sZg~~/07hLK6RmYHz9sVKTjakdFe_OrUXlyJaWcmPsRo13cN36NHyRR9_VE_YnG_H8KrhyfNg8omV6eI-WcOVtZ8M9Iw~~">Warga Desa Jakatan Masaha Antusiasi Ikut PSL Pemilu 2019</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>6</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">24</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/f71c4a8b58eb0f3f799e1dbc43e48ece.jpg" title=""></div>
+                            <div class="content_thumb">
+                Pemungutan Suara Lanjutan (PSL) di TPS 01 Desa Jakatan Masaha Kecamatan Mandau Talawang Kabupaten Kapuas, Kalimantan Tengah, Rabu (24/4/2019), antusias diikuti oleh pemilih              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="1.511 TPS Telah Gelar PSU, PSS dan PSL" href="https://www.kpu.go.id/index.php/post/read/f9abIlQRAkZEw3Zq-Y5wBPRarpBl5Q8jwIbnEkR4tpHNcM-IDtsxwe7lQ42H0-KSLHMrtnq2VlPgn6smpvoNrg~~/4vCxEgWiMQrWdikrz3eAn1wphKMv5qYKenCXRPEnGQUPgOF5tj0IIFegdrDdipWCirKpcp_nlSlgd0nHr5j_gg~~">1.511 TPS Telah Gelar PSU, PSS dan PSL</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>52</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">22</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/e89779a03a9bd9b2967a2626a3af172b.jpg" title=""></div>
+                            <div class="content_thumb">
+                ingga Senin (22/4/2019), tercatat 1.511 Tempat Pemungutan Suara (TPS) telah melaksanakan ketiga jenis pemungutan dari 2.767 yang harus melaksanakan              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Belasan Penyelenggara Pemilu Wafat, KPU Sulbar Gelar Doa Bersama" href="https://www.kpu.go.id/index.php/post/read/aUFZh6PMtYsuJNuoXAbB0hBCglGMlaGa30Raqhw8-RZWrenUdjHJL9H_4WyMAW-O3GvO_sMe3XiI0CyYYG02MA~~/__RjHNXzEbbWYxbAK-B6-R1OtFPAuqmSXx_smZhn7BgzUPlnw-dqAX8c_nbVhHO4W6ykDHLhB7Le29L318Voxw~~">Belasan Penyelenggara Pemilu Wafat, KPU Sulbar Gelar Doa Bersama</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>20</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">20</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/5c29b8c6b979d11ee39c4f422afabd3a.jpg" title=""></div>
+                            <div class="content_thumb">
+                Doa digelar di Aula Kantor KPU Sulbar, dipimpin Ketua KPU Sulbar Rustang, didampingi Anggota KPU Sulbar lainnya Farhanuddin, Sukmawati dan Adi Arwan serta Plt Sekretaris KPU Sulbar, Baharuddin              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Posko Hitung Suara, Bentuk Transparansi KPU akan Hasil Pemilu" href="https://www.kpu.go.id/index.php/post/read/sMjk1QuJONgGScv_cFNLGqZfZW6fiZVxAPfKurjyig-qpx7zWceyOyGQfdrnR9oH5fI4HVpwUFYWSG2suMcMIQ~~/HMItOLpSbzfmBeSM5Ezgcyc825CT-RCjeNhsOjIpGxnxTNHXu3ZF-d9p4Dmh7DN_Z3YzaAy61PqAuQ8_RZ7Ldg~~">Posko Hitung Suara, Bentuk Transparansi KPU akan Hasil Pemilu</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>27</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">20</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/8506b95db95ef2435632be7f78d2bdad.jpg" title=""></div>
+                            <div class="content_thumb">
+                Sukses menggelar pesta demokrasi terbesar pada 17 April lalu, Komisi Pemilihan Umum (KPU) kini tengah disibukkan dengan tahapan penghitungan suara              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Pemilu 2019 Sukses" href="https://www.kpu.go.id/index.php/post/read/-Rl3K5Be2almunQ3GZHeS050CtpI8k_3whoP8VjrKQINaIebHATP7IdKC2M_OWl6_yCyFm2LuMTUhRrcIi0rIA~~/6oDj6jCCl1-ucYgFeMxrsJN4j7M6kFIu-yQC510MWTQnVpjuTArBOp-2clHy2OTWrVvoovwxM1ah3WTDJpxffQ~~">Pemilu 2019 Sukses</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>6</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">18</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/bbe6f44dfd0d6125ff23e79b0f9a8246.jpg" title=""></div>
+                            <div class="content_thumb">
+                Berdasarkan pemantauan sementara partisipasi didalam negeri cukup tinggi, sementara partisipasi diluar negeri telah menyentuh angka 65% di 67 PPLN dari 130 PPLN yang ada              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Buku Panduan KPPS dan PPK dalam Pemilu 2019" href="https://www.kpu.go.id/index.php/post/read/JebdpsL_63SLtmo3g4da86XbmshGpmi6RHQ9rZru2bUst_-eBI3zCcZ0dZT79tuLT6tFmFPYPs59vT80QPPztg~~/hEVKU6yYbIRAcQ3HF-CDGP1UZO1sT-b0EVAPeMX1o2fvnHbA-OmK6OfN8GIFJPCMNWX5eY9yXmeG4dOoDavZog~~">Buku Panduan KPPS dan PPK dalam Pemilu 2019</a>
+            </h5>
+
+          <div class="content_meta"><b>artikel</b> &middot; posted by <b>admin</b> &middot; dibaca <b>18443</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">17</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/65368e3f5daf1c1668f3b6806c8e101e.jpg" title=""></div>
+                            <div class="content_thumb">
+                Buku Panduan Kelompok Penyelenggara Pemungutan Suara (KPPS) dan Panitia Pemilihan Kecamatan (PPK) Pemilu 2019              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="EVP 2019 Sukses Pukau Delegasi Asing" href="https://www.kpu.go.id/index.php/post/read/O09jD0gmdy1_Mb5zIBbvfpTFCBbv75HMvN9GQ0akpmLf062BgGpa7l-c9xkXKSZka6AXZbr5fMKCrJ8NPYqbBw~~/Z6QoH96p0j0dNbPZuIuguD16iYY9De7W0qTYdphlc33_2vUC-ONAz-tythKERc6JKlABTfqfrFOqC090kmMBew~~">EVP 2019 Sukses Pukau Delegasi Asing</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>3</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">17</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/9d2d31a67e96e013d7a8da20b73edb2f.jpg" title=""></div>
+                            <div class="content_thumb">
+                Kegiatan yang ditujukan untuk memberi pengalaman dan pengetahuan kepemiluan bagi penyelenggara pemilu, perwakilan duta besar dan non government organization (NGO) negara sahabat ini mendapat apresiasi positif dari para peserta              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="KPU Kapuas Musnahkan 6.973 Surat Suara Rusak dan Berlebih" href="https://www.kpu.go.id/index.php/post/read/aMZk-i1fQNMGQqmyAG5y50wHTmyOoBdSyYMj-a4eL6PGChiZ_OkYBBqGNFjvyJ5eH7E9wVTURANQUPhQVDWW8w~~/-WxJXpBgjIVPyXBRV8zDG-EOV57h8ZgsDAUEnoEmktBUrjahWg6tcESQD84-bNA65a3-ihFW8-dq0s150ocCmw~~">KPU Kapuas Musnahkan 6.973 Surat Suara Rusak dan Berlebih</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>8</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">16</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/631dc0de1a2b09837809ae9d45c08c5a.jpg" title=""></div>
+                            <div class="content_thumb">
+                “Ini sebagai tindak lanjut atas surat KPU atas surat suara rusak dan berlebih,” ujar Anggota KPU Kabupaten Kapuas, Budi Prayitno              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Dari Bawah Kolong Jembatan, KPU Kota Mataram Ajak Warga Gunakan Hak Pilih" href="https://www.kpu.go.id/index.php/post/read/2dx8bQL5pfFQDxKUGVm38ETBNK6cuicdz6HxQXqgQqLxWU7ilayk8268UmvSTJykuObPgLnT-uMHHuc_sH3W0Q~~/OelXFOH5QesDRQxgTFfm0Y3aiuH04pbqX1I7a8G6g1pho1E-7UGSFAi8C2PWwdfIeZ6Fiu48cM_emsowMDOaJg~~">Dari Bawah Kolong Jembatan, KPU Kota Mataram Ajak Warga Gunakan Hak Pilih</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>6</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">15</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/0dc5a80195ed41273deda87f64bd6e7f.jpg" title=""></div>
+                            <div class="content_thumb">
+                Yang menarik dari kegiatan sosialisasi ini, selain menghadirkan langsung Komisioner KPU Kota Mataram Kadiv SDM dan Parmas, Sopan Sopian Hadi sebagai pembicara, lokasi sosialisasi yang berada di kolong Jembatan Kecamatan Ampenan              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Pesan Ketua KPU Tutup Masa Kampanye Pemilu 2019" href="https://www.kpu.go.id/index.php/post/read/DX3vBVy_Oi7Xt0pSqSYOh-5_ORjYGpjhg9Iii3pZLTx34vqpP9sBWrnifPQuQWMk2bFYEcDxURlsmDDOpaYxfg~~/gZhbMR7mRrYbsHNabvF4EA5_hFiiIihWkMqY0DT4GoSiQr-2lDZ2y83W2yW9zfpbJbM-unwsP943o985SKU58A~~">Pesan Ketua KPU Tutup Masa Kampanye Pemilu 2019</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>8</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">13</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/201329e1488fb18d44c3501ac77eff52.jpg" title=""></div>
+                            <div class="content_thumb">
+                Komisi Pemilihan Umum (KPU) resmi menuntaskan Debat Kelima Pasangan Calon Presiden dan Wakil Presiden Pemilu 2019 dengan sukses, di Jakarta, Sabtu (13/4/2019) malam              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="KPU Umumkan LHKPN Capres-Cawapres Pemilu 2019" href="https://www.kpu.go.id/index.php/post/read/irqhBRx9FtPVD0cp10FVx6_bxDvbvHUh5CWlFoF_VbnKLsKuvkbxtBjDiC3zRWY9kIk7BdV866GYNK7wVJyPOg~~/_YuATt5r7txFkwRHyNotrmhpyhzhq-Yr3Sf8Wdwrc-QRrv_4a5k-zyO38QhG-Q9zFsircm2waZelFGK4dVfvqA~~">KPU Umumkan LHKPN Capres-Cawapres Pemilu 2019</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>15</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">12</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/a174a7515c79d0d61ae6f44d48d0ce0a.jpg" title=""></div>
+                            <div class="content_thumb">
+                Salah satu syarat yang harus dipenuhi peserta pemilu saat mendaftar ialah berkas Laporan Harta Kekayaan Pejabat Negara (LHKPN)              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Pengumuman Penetapan Calon Anggota KPU Kabupaten/Kota 2019-2024" href="https://www.kpu.go.id/index.php/post/read/-6WRvx1bfMEfXdPezypSDfJ4VrJFtGSaBeq3gx3M6XE-HjiOVxMZiLYF5Tcj4eb0uhIiyS-aOntKIJFn8QVrQg~~/553UYHOCT3KcNr34bjrifJoBUQ251kzfBOzUP0Cv1ryEFOiYSj24jwqQh06vBTVpwr6jQNL5I2AAZdLwfJ22pw~~">Pengumuman Penetapan Calon Anggota KPU Kabupaten/Kota 2019-2024</a>
+            </h5>
+
+          <div class="content_meta"><b>artikel</b> &middot; posted by <b>admin</b> &middot; dibaca <b>22127</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">12</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/42362a328d57621da7edfe9d8122bfff.jpg" title=""></div>
+                            <div class="content_thumb">
+                Pengumuman Nomor 34/PP.06-Pu/05/KPU/IV/2019 tentang Penetapan Calon Anggota Komisi Pemilihan Umum Kabupaten/Kota Periode 2019-2024              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Pengumuman Pengangkatan CPNS 2019" href="https://www.kpu.go.id/index.php/post/read/5P7Rpl3hmW5dnNyML2_Wfr0hZLcMR6HEYvrWHWvYsnMZsMTuJ-YYzF6-cfi7JxYhhhiq3rFxw-i0bz_QpkLI9A~~/AVad9Lxf8wB6-ubo6BVFQX18GarwAlihx_-nizK9DkFssZHQ3ajeB05k0HND_LsOFtnrJRSCbMm9szAyvslqbQ~~">Pengumuman Pengangkatan CPNS 2019</a>
+            </h5>
+
+          <div class="content_meta"><b>artikel</b> &middot; posted by <b>admin</b> &middot; dibaca <b>18498</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">12</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/42362a328d57621da7edfe9d8122bf9f.jpg" title=""></div>
+                            <div class="content_thumb">
+                Pengumuman Nomor 4/SDM.05.5-Pu/05/SJ/IV/2019 tentang Panggilan Melaksanakan Tugas Calon Pegawai Negeri Sipil Sekretariat Jenderal Komisi Pemilihan Umum, Sekretariat Komisi Pemilihan Umum Provinsi, Dan Sekretariat Komisi Pemilihan Umum Kabupaten/Kota Tahun 2018              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="KPU Mamasa Prioritaskan Logistik Pemilu Menuju Daerah Terpencil" href="https://www.kpu.go.id/index.php/post/read/sWhTJGnILiOQon3y53-MlHtm39BAcJpX_33WNz_ZhcJZ3tiV672Jld2rh_OjDhDchT3UUvkMzCqWTm2JYNdSog~~/XvOHSnDvCc3Ii5aLO4je5Y7QOkp7eeold_7tD9X0dUk1D2gr89ezY5ZYmpz9xESnUpobxY95QFGFaxhj8S-1PA~~">KPU Mamasa Prioritaskan Logistik Pemilu Menuju Daerah Terpencil</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>2</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">11</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/a72fc501d2a7242263357add4c7f1ee2.jpg" title=""></div>
+                            <div class="content_thumb">
+                Hari pemungutan suara Pemilu 2019 makin dekat, sejumlah Komisi Pemilihan Umum (KPU) tingkat kabupaten telah melakukan pengiriman logistik menuju Tempat Pemungutan Suara (TPS) dengan prioritas daerah yang terpencil, terjauh dan tersulit terjangkau              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Tangkal Hoaks dengan Optimalisasi Media Sosial" href="https://www.kpu.go.id/index.php/post/read/f4ILvQEc-45PDD2Z-HywAuYMTBAg6WWIRBjTXt3JifdmIb0K8LhT1yg94GLYwpmhRAOk-EKJFaOLRk1wIH_0iw~~/4VZRdwVRs-UgThktzAThEFPDrvqwqR5CcwoReUSV3p8ozZb5NSNqZFLJPu0HhskfCCu0Db8iGUuIk88PzXb1Ew~~">Tangkal Hoaks dengan Optimalisasi Media Sosial</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>2</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">10</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/8cc85867fb83e5dee596b2a463f996c7.jpg" title=""></div>
+                            <div class="content_thumb">
+                Mendekati hari pemungutan suara, penyelenggara pemilu khususnya Komisi Pemilihan Umum (KPU) terus digempur dengan serangan informasi bohong (hoaks) oleh pihak-pihak yang tidak bertanggungjawab              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Seleksi Peserta Diklat PBJ Pemerintah di Lingkungan KPU se-Kalteng" href="https://www.kpu.go.id/index.php/post/read/0b0urSoTk2LmZ3NsrmmKfUdZTY_vbSJJtLzy_knAIFnVM4NF1DkY2QWj32gLFLuaLk1KrE_zm29yJgW_YSl5pA~~/84KqzGOQUavGmBFoV5Nb9NBBbwjCw8ATrDQYgSgB6FsLSL5XzvKvj-6dfRAm97e1CtSJ9xCpJGhsBuCpFfhHtA~~">Seleksi Peserta Diklat PBJ Pemerintah di Lingkungan KPU se-Kalteng</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b></b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">10</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/2bea5eeda4845bdf33a82ee84d32d086.jpg" title=""></div>
+                            <div class="content_thumb">
+                Kegiatan yang diselenggarakan oleh Biro SDM KPU RI ini diikuti 10 ASN dari Sekretariat KPU provinsi, kabupaten/kota, yang dilaksanakan di Ruang RPP KPU Provinsi Kalteng              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Penandatanganan Pakta Integritas Panelis Moderator Debat Kelima" href="https://www.kpu.go.id/index.php/post/read/cUvevnMPRx6B-8aVTEjZ-U0p2433-_QBpq1c0SdgkuhsbcL2wMTT2v0twmXbPZOXBS03Cz4TsHQnlvuwwO5KtQ~~/OTYGWcWwuxy8CuuKMBFI-5pAnFdfow4zvv560oK-GxWsK6CB51TO5QedID52VLy1_Y4hBggvAA1vOtvPvKOdlw~~">Penandatanganan Pakta Integritas Panelis Moderator Debat Kelima</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>1</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">10</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/65deb4ba2599b4a04249345a7dfc6377.jpg" title=""></div>
+                            <div class="content_thumb">
+                Tiga hari jelang Debat Kelima Pasangan Calon Presiden dan Calon Wakil Presiden Pemilu 2019, Komisi Pemilihan Umum (KPU) RI mengikat komitmen para panelis dan dua moderator dengan menandatangani pakta integritas              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Apresiasi KPU Atas Dukungan Masyarakat untuk Suksesnya Pemilu" href="https://www.kpu.go.id/index.php/post/read/4XGF8o-ecFOXpcNEvwrW8W4HrTRVhnJb79I_2PtdKSO9wHvCESZpYDYaozWx0kE_FpEviLBM_0yTSCz0bX5N3Q~~/Qk0TQD0u8oTyRp4E0i9vdRqHxVyg_IR1DuTqa3Y-SjdD0wkxDPn9sHfcGjHyQfO0w4qgNoNDorrSiRWAOkGxZA~~">Apresiasi KPU Atas Dukungan Masyarakat untuk Suksesnya Pemilu</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>4</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">10</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/af92f063f276075c71131b77c097daaf.jpg" title=""></div>
+                            <div class="content_thumb">
+                Dalam seruannya, Suluh Kebangsaan meyakini bahwa KPU adalah lembaga mandiri yang tidak dapat diintervensi oleh lembaga di luarnya dan tidak dapat melakukan rekayasa secara terstruktur atas pelaksanaan dan penetapan hasil pemilu              </div>
+          </div>
+        </div>
+              <div class="media">
+          <div class="media-body">
+            <h5 class="media-heading"><a class="tooltips" data-toggle="tooltip" data-placement="right" title="Lantik Jelang Pemilu, 11 Anggota Kabupaten Diminta Kerja Maksimal" href="https://www.kpu.go.id/index.php/post/read/oa-mrv70SDGTwLgZOaSu_sOLS_P2dZgSUTzgUQZvOSji6FQG9_jxtLLYOBaMytuns8UK9OSr5pRnWyPqauDkPw~~/EBn10Jjs3KmUopxxF4XeCvw2X0UuuJxdbnJTcbqCbHUTgEidbvn17V82mEJAaLp51RVuJtCdI_tKWgdWfFA2OA~~">Lantik Jelang Pemilu, 11 Anggota Kabupaten Diminta Kerja Maksimal</a>
+            </h5>
+
+          <div class="content_meta"><b>berita</b> &middot; posted by <b>admin</b> &middot; dibaca <b>1</b> kali</div>
+
+                        <div class="media-date"> 
+            <span style="font-size: 15px;font-weight: bold">09</span> <br /> 
+            <span style="text-transform: uppercase;font-size: 8px;font-weight: bold;margin-left: -9px;margin-top: -3px;position: absolute;">Apr</span><br />
+            </div>
+                        <br />
+                            <div class="image_thumb"><img src="https://www.kpu.go.id/./application/modules/post/images/ab0dd25eec54914667d20ee00352193a.jpg" title=""></div>
+                            <div class="content_thumb">
+                Ketua KPU RI Arief Budiman yang memimpin jalannya pelantikan berpesan agar jajaran yang baru dilantik segera menyesuaikan diri dengan rutinitas kesibukan kepemiluan yang telah berjalan              </div>
+          </div>
+        </div>
+           
+  </div>
+</div>
+</div>
+</div>
+<!-- end content -->
+</div>
+
+
+<!-- banner -->
+<div class="hidden-xs hidden-md col-md-4 nopadding">
+	<div id="content_1" class="content">
+                 <a href="https://kpu.go.id/index.php/pages/detail/-RMsBhrftAfNW5JMLfEjZkbP8hg0gPvYJClHd2-o5yjCU7l0NogHJQPUxUu5Z22g6B02YpkQc3UpiqtSaBT7lQ~~/B523YQQLxAInSLBQiOLuc-peer9-C9DH4K01ZsANWdtbJeRPLBSX1gcy-KjGIeYfdwvmTb5riy2padi7OvtiCg~~" target="_blank">
+         <img src="https://www.kpu.go.id/reklame/WhatsApp_Image_2018-11-29_at_13.41_.31_.jpeg" width="100%"/><br />
+       </a>
+            <a href="https://www.kpu.go.id/index.php/pages/detail/nHImo-4rMFBj3X7yYQQT2GqKoRzllXD1--G6rzRETy33cxQgErq7JrQLCQd__TtWwwg3o0cpfpHl5pWQo85ILw~~/zrLpx3feMNgnaQkIE7q6WZAXcPIURVVbaxxU0ll0VDtaXtB9bxLaFv78cJ2FleGibT_czbHvzQ8-ip4vyYbhOw~~ " target="_blank">
+         <img src="https://www.kpu.go.id/reklame/Banner_Web3.jpg" width="100%"/><br />
+       </a>
+            <a href="https://www.kpu.go.id/index.php/pages/detail/JLLv0KPws4okkGJDSEqdoGyD6rA82Mnt4lyDoWnydIqATzCw-Tg9xvgWjq19-sMCVRXlTU4zeE_YgptFNtq_5g~~/5Z9s8NsgkQ-1BL5b7Lwo4atAbkU7S1_sGeKNijkxQyqYSBMM66oQ-OSnGr_-C6n3E7ukrmadU5ecXMCYsX4gHw~~ " target="_blank">
+         <img src="https://www.kpu.go.id/reklame/Banner_Live_Streaming.jpg" width="100%"/><br />
+       </a>
+            <a href="https://www.kpu.go.id/index.php/pages/detail/yXDPouzNbABdUW9ZElJuOfP9MXlBYQOIg7qHpEHxg1txZCpCdZX7Wc31tKqzFY3dovkqY2pjIbGLZvSE9TbQ7Q~~/i1Zhp-5YaVGk_kjTr4OVjaejSqkXrXsBdnVnSiqu_hgvpDc3AEzVlCoSKqAfieczVh7EWsgNu7kLItM3K0HS0w~~" target="_blank">
+         <img src="https://www.kpu.go.id/reklame/Banner_Video_Panduan.jpg" width="100%"/><br />
+       </a>
+            <a href="https://www.kpu.go.id/index.php/pages/detail/BEdGUpV4kU8v89Y1ClQBNiCf6rzmZdfqZ8JOpwJUTuh1MjSEZzT89ARg97Ii-mHYQgyldRhB55DvY9YerS5ZjA~~/3ubjuEEDAfSm7MaHymDhzYzt9ZA0tqna2aBtTHGsOlti3jG2xdvdCdU8JQNUN71vCuIhNyOUYvGC03KpS_ADjg~~ " target="_blank">
+         <img src="https://www.kpu.go.id/reklame/Banner_Maskot.jpg" width="100%"/><br />
+       </a>
+            <a href="https://www.kpu.go.id/index.php/pages/detail/A3_EX679azjwB1AsJzHhVdivpMOnRGdcsLUj_iGT0tnU5zvVyqmUS78n7-mlCRli7LqGiokfxCA1GboHifiu2Q~~/ClbS4rS7rllFE1E-MNcdO-VNhMvcNCp7l0J-mcnJsF2S_eTwxBy251DxD9dO7hoydUhO1_vUymwc3Gn5chIagQ~~" target="_blank">
+         <img src="https://www.kpu.go.id/reklame/BUKU_PANDUAN02.jpg" width="100%"/><br />
+       </a>
+            <a href="https://www.beasiswa.kpu.go.id/Pages/FrontEnd/Default.aspx" target="_blank">
+         <img src="https://www.kpu.go.id/reklame/Banner_Beasiswa4.jpg" width="100%"/><br />
+       </a>
+            <a href="https://www.sipp.kpu.go.id/" target="_blank">
+         <img src="https://www.kpu.go.id/reklame/SIPP_-_PENYELENGGARA1.jpg" width="100%"/><br />
+       </a>
+            <a href="https://www.kpu.go.id/index.php/pages/detail/qq-4nQYtxD479lf4DMz1v-DIvrGD39jVixKb3geeCkLLs0kxD3hCJL2CmBuJK41CUTaIhSvkJXRceFeSEbaGxg~~/p3BVUyUNKo0_YSswMsIJceuepWclPazWxChoS9ZW64oV41N4ZT1Nuxpg1Tf0vf5l-ApBYBSXc71gOk2kyH2sdA~~ " target="_blank">
+         <img src="https://www.kpu.go.id/reklame/LHKPN1.jpg" width="100%"/><br />
+       </a>
+            <a href="https://www.kpu.go.id/index.php/pages/detail/3Yxf0KWqE0OAfYD2tIRmUo1Zi2G9l4_Hkdpo8QH6_0KHrcMw_SnvGpki1XbYD2j20QtFzpVybCY_dGXlouR3IA~~/3SDA7KObHNYs1SQaYjTKo7eoZ6GDbhmEu95dUYaEJCbGyKd0BkDy2oc03Fri6lxnD_XcLGGQ2VoWFSZzjpph-Q~~" target="_blank">
+         <img src="https://www.kpu.go.id/reklame/DUMAS1.jpg" width="100%"/><br />
+       </a>
+            <a href="https://www.kpu.go.id/index.php/pages/detail/7xe6noWazF4d7hKRK0PHnrGN4m1G1kL6r8KiXbFjDoZayEcNyjJUq0IcwUrnHdccTfv0DJ94NJcoLtjpiDzr4g~~/SXgj7uh0xE8ljeT4fYQWIo80hizpWE3fHNIHf1xGGJAF6TWXP1g8G6WOeTiOzZ63vDiBHObKirNJxoOHrZJkzw~~ " target="_blank">
+         <img src="https://www.kpu.go.id/reklame/REFORMASI1.jpg" width="100%"/><br />
+       </a>
+            <a href="https://www.kpu.go.id/index.php/pages/detail/mlsh9dN-CVhctKOs-c6bOTkKLDbOY_wY0qKoYwrjoNnk2DEhIXoCyQUIwh_m_WUQ7VkLMJSWlmT6X5-4m140lQ~~/pty9VKPJwrEspwoFWeOS5B8lcyJTyPh-BPLqSVlJ3Ihd1ics1OKZSnGXLxOdlFa9A11LL4nCDig14_xd86GAvw~~" target="_blank">
+         <img src="https://www.kpu.go.id/reklame/rumah_pintar.jpg" width="100%"/><br />
+       </a>
+            <a href="https://www.kpu.go.id/index.php/pages/detail/GUiw3l1LqOTp3xpekl7bCbonftuiczL1Ch-ZPphuyHDg5sFF7AKd6Aa1aCKfeT7t9BzHqIL6lR0tu3uVZCuCVg~~/b6WvZevNRRCmXMvygXkHWxwKqU634tM_Sr11sutWVT75E11Pkw4NgI5iaX_2FiKfDUoSzryyI_oldq4X-Twxjg~~" target="_blank">
+         <img src="https://www.kpu.go.id/reklame/simpaw_-_penggantian.jpg" width="100%"/><br />
+       </a>
+     	
+   </div>
+</div>
+<!-- end banner -->
+
+</div>
+<!-- 
+-------------- 
+  KPU TV | PUBLIKASI | SARAN
+-------------- 
+-->
+<div class="row-fluid">
+  <div class="col-md-12 nopadding" > 
+    <!-- footer forum konsultasi -->
+    <div class="boxforumkonsultasi">
+     <div class="row-fluid">
+
+       <div class="col-md-4 nopadding">
+         <div class="kputv" > 
+<!--          <div class="cloud">
+             <p class="cloud-text">KPU<br />TV</p>
+         </div> -->
+          <!-- <img style="width: 200px;" src="https://www.kpu.go.id/themes/kpupusatflat/kpu/images/tv.png"> -->
+          <iframe width="360px" height="219" src="https://www.youtube.com/embed/6spyMx1BaGw" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+        <div class="col-md-4 nopadding"> 
+        <div class="kpupublikasi">
+            <div class="kpupublikasi_content"> PUBLIKASI </div>   
+        </div>
+      </div>
+      
+
+      <div class="hidden-xs hidden-md  col-md-4 nopadding"> 
+        <div class="kotakforumkonsultasi">
+            <h4>
+                <span class="glyphicon glyphicon-volume-up"></span> Kontak Saran    
+           </h4>
+                                 <div class="kotak_saran_item">
+            <div class="media-date-bottom"> 
+            <span style="font-size: 22px;font-weight: bold">12</span> <br /> 
+            <span style="text-transform: uppercase; font-size: 14px; font-weight: bold; position: absolute; margin-top: -7px; margin-left: -21px;">10</span>
+            <span style="text-transform: uppercase; font-size: 14px; font-weight: bold; position: absolute; margin-top: -7px; margin-left: -3px;">/15</span>
+            </div>
+
+            <h4 class="komen_title">tolong dalam acara pemilihan calon di ganti&#8230;
+            </h4>
+            <p><a href="https://www.kpu.go.id/index.php/guesbook/detail/425" style="color:#FFF">Terima kasih atas saran dan masukannya sebagai perbaikan pemilu di&#8230;</a></p>
+
+            </div>
+                       <div class="kotak_saran_item">
+            <div class="media-date-bottom"> 
+            <span style="font-size: 22px;font-weight: bold">02</span> <br /> 
+            <span style="text-transform: uppercase; font-size: 14px; font-weight: bold; position: absolute; margin-top: -7px; margin-left: -21px;">09</span>
+            <span style="text-transform: uppercase; font-size: 14px; font-weight: bold; position: absolute; margin-top: -7px; margin-left: -3px;">/14</span>
+            </div>
+
+            <h4 class="komen_title">saya mahasiswa Fakultas Hukum Universitas Padjadjaran Bandung,&#8230;
+            </h4>
+            <p><a href="https://www.kpu.go.id/index.php/guesbook/detail/399" style="color:#FFF">Dear, D.M. Yunita Nurelisa... Silakan mengirimkan surat permohonan wawancara penelitian,&#8230;</a></p>
+
+            </div>
+                       <div class="kotak_saran_item">
+            <div class="media-date-bottom"> 
+            <span style="font-size: 22px;font-weight: bold">19</span> <br /> 
+            <span style="text-transform: uppercase; font-size: 14px; font-weight: bold; position: absolute; margin-top: -7px; margin-left: -21px;">08</span>
+            <span style="text-transform: uppercase; font-size: 14px; font-weight: bold; position: absolute; margin-top: -7px; margin-left: -3px;">/14</span>
+            </div>
+
+            <h4 class="komen_title">saya ada saran dan masukan ni buat&#8230;
+            </h4>
+            <p><a href="https://www.kpu.go.id/index.php/guesbook/detail/395" style="color:#FFF">Salam, Liana. bisa dikirimkan via email info@kpu.go.id</a></p>
+
+            </div>
+                              </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- end forum konsultasi -->
+</div>
+</div>
+</div>    
+<!-- end container -->
+
+
+  
+
+        <div class="row" style="width: 100%;padding-right: 0px !important;margin-right: 17px !important;background: #333;margin-left: 0px;">
+          <div class="col-md-12">
+            <div class="footer">
+              <div class="container">
+                <div class="clearfix">
+               	   
+		 <dl class="footer-nav">
+                    <dt class="nav-title">TENTANG KPU</dt><dd class='nav-item'><a  href='https://www.kpu.go.id/index.php/pages/detail/irJ6v-E70iQMANuBn07ba_GZsHxgb1LkMqy32847kP-eIsbJsoooqUeYUOjcWs6jyj35OtkERkEWtsRQ7AWsWw~~/MaZ9wWY1q7xuGdVslKPksaGiLN1GApa1Fn2HYGVMvKZvDFZFNgJVop8p0e8MA7S0iH-_Ma_3P2WeRFBBecG5Ew~~'>Sejarah KPU</a></dd><dd class='nav-item'><a  href='https://www.kpu.go.id/index.php/pages/detail/IOeKTtO9KP7pIXHKbuYb1wQP4HJ0DFkCbdFEOXwxzgcaFvQuyxrwQm6vcLtQG-6eE2Q7pbZRvbeIbe9HLJf1Qg~~/dDO12Qpr71DBF9_NF20hzgM0HNSq4yaQjhOnBxj8i9AD9ptmq4CY7IBUl8kogZJor2olq0ODGFwCCHSLWqUCfw~~'>Visi Misi</a></dd><dd class='nav-item'><a  href='https://www.kpu.go.id/index.php/pages/detail/2EEGMIWuY1bl535fsyqgdl2lbSjnHqzCFzmBdQqHntw5jF3b2reKHqHwli77dCGhCmpkzp2CpdzhMcTdf0khDQ~~/HMBeMwDeOrZC4O90A1s0cCSuf4gQz6sAZvoRwcZBtx5iFl4Ulz0WJsWeXbXJyvzA3ehrsfdMfV4qXNZq_tDwdw~~'>Struktur Organisasi</a></dd><dd class='nav-item'><a  href='https://www.kpu.go.id/index.php/pages/detail/8VaT1xjrRbOLXyJQcgcV1G5ndwA7GdFEXEC9uGiRM056TtAQ8pVNvvH_1Las8SljAhpbLq4CN8IRCIj695CGaw~~/nw4iaZdI82v6qGvV0BCHqJS-M1jH7e8BDy2_q06HZmzHWVUGFFAOpMfg5ARd1cSIlXySa6ptKLYybXzmkQudCg~~'>Tugas dan Kewenangan KPU</a></dd>
+                  </dl>
+	 
+		 <dl class="footer-nav">
+                    <dt class="nav-title">KONTAK</dt><dd class='nav-item'><a  href='https://www.kpu.go.id/index.php/sitemap/kontak'>Kontak Kami</a></dd><dd class='nav-item'><a  href='https://twitter.com/KPU_ID'>Twitter</a></dd><dd class='nav-item'><a  href='https://www.facebook.com/KPURepublikIndonesia/'>Facebook</a></dd><dd class='nav-item'><a  href='https://www.youtube.com/channel/UCVdSz86o9q2cQKvAQ5QhOYg'>Youtube</a></dd><dd class='nav-item'><a  href='https://www.instagram.com/kpu_ri/'>Instagram</a></dd><dd class='nav-item'><a  href='https://www.kpu.go.id/index.php/sitemap'>Peta Situs</a></dd><dd class='nav-item'><a  href='https://www.kpu.go.id/index.php/pages/detail/m6ToTnpWqEwmxn7Db2NDxG7F_5eKFnTj3bC4lvjilIMIEgjkKxxuLVop9u5rTXMuAc9jCivjveFSCDehAt_hkg~~/i_g1MmhFMJRlqbHhKt7vEqJJJghDH5Wk79c8CLP-ho5cAWukWXhv0XdK_zFLvD6cb3Kdqz_1ddVo01s-ypb6AA~~'>Kotak Pengaduan</a></dd>
+                  </dl>
+	 
+		 <dl class="footer-nav">
+                    <dt class="nav-title">BERITA</dt><dd class='nav-item'><a class="active" href='https://www.kpu.go.id/index.php/post/categories/JWcXFivav-KXy5x8sWQuJSosDaImqKbxKOznokc5JENBFI_09NAeSrscEYkfiFix0uAn8V42fJ0vwrSBzg3Miw~~'>Berita Terkini</a></dd><dd class='nav-item'><a  href='https://www.kpu.go.id/index.php/post/categories/BDBRN2tSsFheOPurrr4_akI9Zlh5mU45fQH86BERPQLpz_hCyC7s6m5ZQ2IwLyJHFd2XTF0gyD7j53r1v6o-2Q~~'>Opini</a></dd><dd class='nav-item'><a  href='https://www.kpu.go.id/index.php/post/categories/cQW_UWD1kC7CoeGaUTXO3L1yyI-X6yyhfe-8oau731SoqUkxblZ5Ie5eWa7WmmHRM84Aqs2xXTLeYTqWCJj_5Q~~'>Berita KPU Daerah</a></dd><dd class='nav-item'><a  href='https://www.kpu.go.id/index.php/post/categories/bWY-PVWhDgh3fNt5x8fIZa3zwAudr0dxIbeu3nPAXmUkOCgG57tvqBFJlbymwhxGtgTtd3F6NZYcI8X6J1SdEQ~~'>KPU dalam Berita</a></dd>
+                  </dl>
+	 
+		 <dl class="footer-nav">
+                    <dt class="nav-title">SURAT EDARAN/ PENGUMUMAN</dt><dd class='nav-item'><a  href='https://www.kpu.go.id/index.php/arsip'>Surat Edaran</a></dd><dd class='nav-item'><a  href='https://www.kpu.go.id/index.php/post/categories/00ENpTUO9_3wuVIXUGNtDtIHcanB3esYSpk6Nq-Ew2Sy4OA6OjHlsHSJ3sJkB5ZAIEYqkSFjoOVZpbBBK1A6eA~~'>Pengumuman</a></dd>
+                  </dl>
+	                 </div>              
+              </div>
+            </div>
+          </div>
+        </div>
+
+    
+    <!--footer-->
+    <div class="site-footer">
+      <div class="container">
+
+        <div class="copyright clearfix">
+  
+         <p style="text-align:center;color:#fff;font-size:12px;">Komisi Pemilihan Umum Republik Indonesia &copy; 2016 All rights reserved.
+		  		</p>
+	    
+	 
+
+	  </div>
+		
+		
+		
+      </div>
+    </div>
+   
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+
+    <script src="https://www.kpu.go.id/themes/kpupusatflat/kpu/dist/js/bootstrap.min.js"></script>
+    <script src="https://www.kpu.go.id/themes/kpupusatflat/kpu/assets/js/jquery.plugin.js"></script>
+    <script src="https://www.kpu.go.id/themes/kpupusatflat/kpu/assets/js/jquery.countdown.js"></script>
+	<script src="https://www.kpu.go.id/themes/kpupusatflat/kpu/jquery.scrollbox.js"></script>
+	<script src="https://www.kpu.go.id/themes/kpupusatflat/js/jquery.tipsy.js"></script>
+	<script src="https://www.kpu.go.id/themes/kpupusatflat/kpu/scroll/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+
+$(function () {
+  
+ $('.tips a').tipsy({fade: true, gravity: 'w'});
+	   $('.tipsatas a').tipsy({fade: true, gravity: 's'});	
+  $('#demo4').scrollbox({
+    direction: 'h',
+    switchItems: 4,
+    distance: 670
+  });
+  
+  var queueNext = 7;
+  (function () {
+    $('#demo6-queue ul').append('<li><p>'+ queueNext +'</p></li>');
+    queueNext++;
+    setTimeout(arguments.callee, 2000 + parseInt(Math.random() * 2000, 10));
+  }());
+});
+
+$(document).ready(function(){	
+	var first = 0;
+	var speed = 700;
+	var pause = 3500;
+	
+		function removeFirst(){
+			first = $('ul#listticker li:first').html();
+			$('ul#listticker li:first')
+			.animate({opacity: 0}, speed)
+			.fadeOut('slow', function() {$(this).remove();});
+			addLast(first);
+		}
+		
+		function addLast(first){
+			last = '<li style="display:none">'+first+'</li>';
+			$('ul#listticker').append(last)
+			$('ul#listticker li:last')
+			.animate({opacity: 1}, speed)
+			.fadeIn('slow')
+		}
+	
+	interval = setInterval(removeFirst, pause);
+});
+
+Modernizr.load({
+				test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+				yep : ['https://www.kpu.go.id/themes/kpupusatflat/js/jquery.hoverfold.js'],
+				nope: 'https://www.kpu.go.id/themes/kpupusatflat/css/fallback.css',
+				callback : function( url, result, key ) {
+						
+					if( url === 'https://www.kpu.go.id/themes/kpupusatflat/js/jquery.hoverfold.js' ) {
+				$( '#grid' ).hoverfold();
+					}
+
+				}
+			});
+
+
+</script>
+
+
+    
+    <script type='text/javascript'>
+$(document).ready(function(){
+
+
+$(".tooltips").tooltip();
+
+   $(function () {
+     var austDay = new Date();	
+     austDay = new Date(, -1, );	
+     $("#defaultCountdown").countdown({until: austDay});
+     $("#year").text(austDay.getFullYear());
+   });
+
+  
+(function($){
+			$(window).load(function(){
+				$("#content_1").mCustomScrollbar({
+					scrollButtons:{
+						enable:true
+					}
+				});
+			});
+		})(jQuery);
+
+});
+
+</script>
+    
+    
+  </body>
+</html>
